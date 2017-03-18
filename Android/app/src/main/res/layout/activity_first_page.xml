@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/background"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/cloudsblue"
+    tools:context="com.example.brionsilva.raven.firstPage">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherIconimageView"
+        android:background="@drawable/na"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/condition"
+        android:id="@+id/condition"
+        android:textSize="24dp"
+        android:layout_below="@+id/weatherIconimageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        android:id="@+id/temperature"
+        android:textSize="78dp"
+        android:layout_below="@+id/condition"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:shadowColor="#a1a1a1"
+        android:shadowRadius="10"
+        android:shadowDx="3"
+        android:shadowDy="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/date"
+        android:id="@+id/date"
+        android:layout_below="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:onClick="switchToReadings"
+        android:background="@drawable/readingsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readingsbtn"
+        android:layout_alignTop="@+id/teambtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:onClick="switchToAbout"
+        android:background="@drawable/aboutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutbtn"
+        android:layout_alignTop="@+id/readingsbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="88dp" />
+
+    <ImageButton
+        android:onClick="switchToTeam"
+        android:background="@drawable/teambutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teambtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="175dp" />
+
+    <ImageButton
+        android:onClick="switchToHelp"
+        android:background="@drawable/helpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/weatherIconimageView"
+        android:layout_alignEnd="@+id/weatherIconimageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Readings"
+        android:id="@+id/readingsText"
+        android:layout_alignBottom="@+id/aboutbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="About Us"
+        android:id="@+id/aboutText"
+        android:layout_alignBottom="@+id/aboutbtn"
+        android:layout_alignLeft="@+id/aboutbtn"
+        android:layout_alignStart="@+id/aboutbtn"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Our Team"
+        android:id="@+id/teamText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/teambtn"
+        android:layout_alignStart="@+id/teambtn"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Help"
+        android:id="@+id/helpText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/helpbtn"
+        android:layout_alignEnd="@+id/helpbtn"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <ImageButton
+        android:background="@drawable/locationbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:layout_alignTop="@+id/weatherIconimageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="switchToLocation"/>
+
+    <ImageButton
+        android:background="@drawable/bagicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/baglocation"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/readingsText"
+        android:layout_alignEnd="@+id/readingsText"
+        android:onClick="switchToBagLocation"/>
+
+</RelativeLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/teambg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.brionsilva.raven.OurTeam">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="OUR TEAM"
+        android:id="@+id/teamtv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:background="@drawable/brion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brion"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/thilan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:background="@drawable/thilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thilan"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/piumal"
+        android:layout_alignRight="@+id/brion"
+        android:layout_alignEnd="@+id/brion" />
+
+    <ImageView
+        android:background="@drawable/piumal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piumal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:background="@drawable/pala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thushan"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/piumaltwitter"
+        android:layout_toLeftOf="@+id/thushanText"
+        android:layout_toStartOf="@+id/thushanText" />
+
+    <ImageView
+        android:background="@drawable/anuradha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anuradha"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/thushan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:background="@drawable/fbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brionfb"
+        android:layout_alignTop="@+id/brion"
+        android:layout_alignLeft="@+id/briontwitter"
+        android:layout_alignStart="@+id/briontwitter"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="0dp" />
+
+    <ImageButton
+        android:background="@drawable/twitterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/briontwitter"
+        android:layout_alignBottom="@+id/brion"
+        android:layout_toRightOf="@+id/teamtv"
+        android:layout_toEndOf="@+id/teamtv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:background="@drawable/linkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brionlink"
+        android:layout_alignTop="@+id/brionfb"
+        android:layout_alignLeft="@+id/brioninsta"
+        android:layout_alignStart="@+id/brioninsta" />
+
+    <ImageButton
+        android:background="@drawable/instabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brioninsta"
+        android:layout_alignTop="@+id/briontwitter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Brion Mario"
+        android:id="@+id/brionText"
+        android:layout_alignTop="@+id/briontwitter"
+        android:layout_toRightOf="@+id/piumal"
+        android:layout_toEndOf="@+id/piumal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Thilan Lasitha"
+        android:id="@+id/thilanText"
+        android:layout_alignTop="@+id/thilan"
+        android:layout_alignLeft="@+id/brionText"
+        android:layout_alignStart="@+id/brionText"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Piumal Kulasekara"
+        android:id="@+id/piumalText"
+        android:layout_below="@+id/thilan"
+        android:layout_alignLeft="@+id/thilanText"
+        android:layout_alignStart="@+id/thilanText"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Thushan Kavishka"
+        android:id="@+id/thushanText"
+        android:layout_alignTop="@+id/thushan"
+        android:layout_alignLeft="@+id/piumalText"
+        android:layout_alignStart="@+id/piumalText"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Anuradha Gunasinghe"
+        android:id="@+id/anuradhaText"
+        android:layout_alignTop="@+id/anuradha"
+        android:layout_alignLeft="@+id/thushanText"
+        android:layout_alignStart="@+id/thushanText"
+        android:layout_marginTop="25dp" />
+
+    <ImageButton
+        android:background="@drawable/fbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thilanfb"
+        android:layout_alignTop="@+id/thilan"
+        android:layout_alignLeft="@+id/briontwitter"
+        android:layout_alignStart="@+id/briontwitter" />
+
+    <ImageButton
+        android:background="@drawable/linkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thilanlink"
+        android:layout_alignTop="@+id/thilanfb"
+        android:layout_alignLeft="@+id/thilaninsta"
+        android:layout_alignStart="@+id/thilaninsta" />
+
+    <ImageButton
+        android:background="@drawable/twitterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thilantwitter"
+        android:layout_below="@+id/thilanText"
+        android:layout_alignLeft="@+id/thilanfb"
+        android:layout_alignStart="@+id/thilanfb" />
+
+    <ImageButton
+        android:background="@drawable/instabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thilaninsta"
+        android:layout_below="@+id/thilanText"
+        android:layout_alignLeft="@+id/brioninsta"
+        android:layout_alignStart="@+id/brioninsta" />
+
+    <ImageButton
+        android:background="@drawable/fbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piumalfb"
+        android:layout_alignTop="@+id/piumal"
+        android:layout_alignLeft="@+id/thilantwitter"
+        android:layout_alignStart="@+id/thilantwitter"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:background="@drawable/linkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piumallink"
+        android:layout_alignBottom="@+id/piumalfb"
+        android:layout_alignLeft="@+id/thilaninsta"
+        android:layout_alignStart="@+id/thilaninsta" />
+
+    <ImageButton
+        android:background="@drawable/twitterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piumaltwitter"
+        android:layout_below="@+id/piumalText"
+        android:layout_alignLeft="@+id/piumalfb"
+        android:layout_alignStart="@+id/piumalfb"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:background="@drawable/instabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/piumalinsta"
+        android:layout_alignTop="@+id/piumaltwitter"
+        android:layout_alignLeft="@+id/piumallink"
+        android:layout_alignStart="@+id/piumallink" />
+
+    <ImageButton
+        android:background="@drawable/fbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thushanfb"
+        android:layout_alignTop="@+id/thushan"
+        android:layout_alignLeft="@+id/piumaltwitter"
+        android:layout_alignStart="@+id/piumaltwitter" />
+
+    <ImageButton
+        android:background="@drawable/linkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thushanlink"
+        android:layout_alignTop="@+id/thushanfb"
+        android:layout_alignLeft="@+id/piumalinsta"
+        android:layout_alignStart="@+id/piumalinsta" />
+
+    <ImageButton
+        android:background="@drawable/twitterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thushantwitter"
+        android:layout_below="@+id/thushanText"
+        android:layout_alignLeft="@+id/thushanfb"
+        android:layout_alignStart="@+id/thushanfb" />
+
+    <ImageButton
+        android:background="@drawable/instabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thushaninsta"
+        android:layout_alignTop="@+id/thushantwitter"
+        android:layout_alignLeft="@+id/thushanlink"
+        android:layout_alignStart="@+id/thushanlink" />
+
+    <ImageButton
+        android:background="@drawable/fbbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anufb"
+        android:layout_alignTop="@+id/anuradha"
+        android:layout_alignLeft="@+id/thushantwitter"
+        android:layout_alignStart="@+id/thushantwitter" />
+
+    <ImageButton
+        android:background="@drawable/linkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anulink"
+        android:layout_alignBottom="@+id/anufb"
+        android:layout_alignLeft="@+id/thushaninsta"
+        android:layout_alignStart="@+id/thushaninsta" />
+
+    <ImageButton
+        android:background="@drawable/twitterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anutwitter"
+        android:layout_below="@+id/anuradhaText"
+        android:layout_alignLeft="@+id/anufb"
+        android:layout_alignStart="@+id/anufb" />
+
+    <ImageButton
+        android:background="@drawable/instabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anuinsta"
+        android:layout_alignTop="@+id/anutwitter"
+        android:layout_alignLeft="@+id/anulink"
+        android:layout_alignStart="@+id/anulink" />
+
+    <ImageButton
+        android:background="@drawable/homebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homebutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goHome1"/>
+
+</RelativeLayout>
